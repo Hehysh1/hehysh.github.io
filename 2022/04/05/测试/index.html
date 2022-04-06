@@ -105,15 +105,15 @@
 
 
 
-<meta name="description" content="耗时一天，终于搭建出了hexo的博客实在是太开心辣哈哈哈哈其实在写这篇文章的时候，g -d一直报错，一看err： yamlexception我也不知道咋回事，上网一搜，好家伙，冒号后面要加空格，不然表示不出来可以看到hexo里边冒号一定得加空格">
+<meta name="description" content="耗时一天，我某河终于搭建出了基于hexo的博客哈哈哈哈实在是太开心辣哈哈哈哈但是部署第一篇正经的文章却出现了一些问题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对于hexo博客的空格之重要性">
 <meta property="og:url" content="http://example.com/2022/04/05/%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="某河之小窝">
-<meta property="og:description" content="耗时一天，终于搭建出了hexo的博客实在是太开心辣哈哈哈哈其实在写这篇文章的时候，g -d一直报错，一看err： yamlexception我也不知道咋回事，上网一搜，好家伙，冒号后面要加空格，不然表示不出来可以看到hexo里边冒号一定得加空格">
+<meta property="og:description" content="耗时一天，我某河终于搭建出了基于hexo的博客哈哈哈哈实在是太开心辣哈哈哈哈但是部署第一篇正经的文章却出现了一些问题">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-04-05T07:55:06.000Z">
-<meta property="article:modified_time" content="2022-04-06T11:18:14.950Z">
+<meta property="article:modified_time" content="2022-04-06T11:54:54.435Z">
 <meta property="article:author" content="某河">
 <meta property="article:tag" content="hexo博客搭建">
 <meta name="twitter:card" content="summary">
@@ -368,7 +368,15 @@
       
 
       
-        <p><br>耗时一天，终于搭建出了hexo的博客<br><br>实在是太开心辣哈哈哈哈<br><br>其实在写这篇文章的时候，g -d一直报错，一看err： yamlexception<br><br>我也不知道咋回事，上网一搜，好家伙，冒号后面要加空格，不然表示不出来<br><br>可以看到hexo里边冒号一定得加空格</p>
+        <p><br>耗时一天，我某河终于搭建出了基于hexo的博客<br><br>哈哈哈哈实在是太开心辣哈哈哈哈<br><br>但是部署第一篇正经的文章却出现了一些问题</p>
+<span id="more"></span>
+<p><br>我们都知道在用hexo new生成文章的时候，会生成一个.md文件，里面有以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">???</span></span><br><span class="line"><span class="attr">tag:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p><br>其中date是自动生成的，是你创建文章的时间，而tag是空着的，于是，我就改了一下tag，把他改成了这样子：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">???</span></span><br><span class="line"><span class="string">tag:hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p><br>注意这里的：冒号后面没有空格，直接就跟上了hexo，不谙世事的我就这么hexo g -d把博客部署到了github上<br><br>没想到部署到github时就开始一直报错，一看错误类型：<br><code>err： yamlexception</code><br><br>我也不知道咋回事，上网一搜。原来，在hexo的代码中，冒号后面一定加空格，不然表示不出来<br><br>正确的表述应该是这样：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">???</span></span><br><span class="line"><span class="attr">tag:</span> <span class="string">hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p><br>通过这个事例，我们可以知道在hexo中冒号后面加空格的必要性<br><br>兄弟们，你门学会了嘛？🤣</p>
 
       
     </div>
