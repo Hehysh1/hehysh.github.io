@@ -104,4 +104,13 @@
         <tag>hexo博客搭建</tag>
       </tags>
   </entry>
+  <entry>
+    <title>对博客密码的测试</title>
+    <url>/2022/04/11/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E5%AF%86%E7%A0%81%E7%9A%84%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>如果你能读到这句话，我就测试成功辣</p>
+]]></content>
+      <tags>
+        <tag>hexo博客搭建</tag>
+      </tags>
+  </entry>
 </search>
