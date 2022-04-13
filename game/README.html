@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"hehysh.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="catch-cat">
+  <meta name="description" content="捉住小猫开始游戏 游戏玩法 点击小圆点，围住小猫。 你点击一次，小猫走一次。 直到你把小猫围住（赢），或者小猫走到边界并逃跑（输）。  部署首先引入游戏框架 phaser.min.js 1&lt;script src&#x3D;&quot;phaser.min.js&quot;&gt;&lt;&#x2F;script&gt;  然后引入游戏代码 catch-the-cat.js 1&lt;script src&#x3D;&amp;qu">
 <meta property="og:type" content="website">
 <meta property="og:title" content="十贰的小窝">
 <meta property="og:url" content="http://hehysh.github.io/game/README.html">
 <meta property="og:site_name" content="十贰的小窝">
-<meta property="og:description" content="catch-cat">
+<meta property="og:description" content="捉住小猫开始游戏 游戏玩法 点击小圆点，围住小猫。 你点击一次，小猫走一次。 直到你把小猫围住（赢），或者小猫走到边界并逃跑（输）。  部署首先引入游戏框架 phaser.min.js 1&lt;script src&#x3D;&quot;phaser.min.js&quot;&gt;&lt;&#x2F;script&gt;  然后引入游戏代码 catch-the-cat.js 1&lt;script src&#x3D;&amp;qu">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-13T03:31:18.024Z">
-<meta property="article:modified_time" content="2022-04-13T03:31:18.024Z">
+<meta property="og:image" content="https://www.travis-ci.org/ganlvtech/phaser-catch-the-cat.svg?branch=master">
+<meta property="article:published_time" content="2022-04-13T03:37:45.594Z">
+<meta property="article:modified_time" content="2022-04-13T03:37:45.594Z">
 <meta property="article:author" content="十贰">
 <meta property="article:tag" content="十贰">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.travis-ci.org/ganlvtech/phaser-catch-the-cat.svg?branch=master">
 
 <link rel="canonical" href="http://hehysh.github.io/game/README.html">
 
@@ -211,7 +213,128 @@
       
       
       <div class="post-body">
-          <h1 id="catch-cat"><a href="#catch-cat" class="headerlink" title="catch-cat"></a>catch-cat</h1>
+          <h1 id="捉住小猫"><a href="#捉住小猫" class="headerlink" title="捉住小猫"></a>捉住小猫</h1><p><a target="_blank" rel="noopener" href="https://ganlvtech.github.io/phaser-catch-the-cat/">开始游戏</a><br><a target="_blank" rel="noopener" href="https://www.travis-ci.org/ganlvtech/phaser-catch-the-cat"><img src="https://www.travis-ci.org/ganlvtech/phaser-catch-the-cat.svg?branch=master" alt="Build Status"></a></p>
+<h2 id="游戏玩法"><a href="#游戏玩法" class="headerlink" title="游戏玩法"></a>游戏玩法</h2><ul>
+<li>点击小圆点，围住小猫。</li>
+<li>你点击一次，小猫走一次。</li>
+<li>直到你把小猫围住（赢），或者小猫走到边界并逃跑（输）。</li>
+</ul>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>首先引入游戏框架 <code>phaser.min.js</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;phaser.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后引入游戏代码 <code>catch-the-cat.js</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;catch-the-cat.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在指定的 div 中新建一个游戏的 canvas，并开始游戏</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;catch-the-cat&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="variable language_">window</span>.<span class="property">game</span> = <span class="keyword">new</span> <span class="title class_">CatchTheCatGame</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">w</span>: <span class="number">11</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">h</span>: <span class="number">11</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">r</span>: <span class="number">20</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">backgroundColor</span>: <span class="number">0xeeeeee</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">parent</span>: <span class="string">&#x27;catch-the-cat&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">statusBarAlign</span>: <span class="string">&#x27;center&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">credit</span>: <span class="string">&#x27;github.com/ganlvtech&#x27;</span></span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>参数列表：</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">w</td>
+<td align="center"><code>11</code></td>
+<td align="left">横向格子数</td>
+</tr>
+<tr>
+<td align="center">h</td>
+<td align="center"><code>11</code></td>
+<td align="left">竖向格子数</td>
+</tr>
+<tr>
+<td align="center">r</td>
+<td align="center"><code>20</code></td>
+<td align="left">圆半径像素</td>
+</tr>
+</tbody></table>
+<p>非必选参数：</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="left">值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">backgroundColor</td>
+<td align="left"><code>0xeeeeee</code></td>
+<td align="left">背景颜色</td>
+</tr>
+<tr>
+<td align="center">parent</td>
+<td align="left"><code>catch-the-cat</code></td>
+<td align="left">父元素的 id 或 DOM 对象</td>
+</tr>
+<tr>
+<td align="center">statusBarAlign</td>
+<td align="left"><code>center</code></td>
+<td align="left">状态栏左对齐 <code>left</code> 或居中 <code>center</code></td>
+</tr>
+<tr>
+<td align="center">credit</td>
+<td align="left"><code>github.com/ganlvtech</code></td>
+<td align="left">右下角的备注信息</td>
+</tr>
+</tbody></table>
+<h2 id="自己编写算法"><a href="#自己编写算法" class="headerlink" title="自己编写算法"></a>自己编写算法</h2><p>参考 <code>src/solvers/</code> 中提供的例子编写算法，并使用下列代码替换。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="property">game</span>.<span class="property">solver</span> = yourSolver;</span><br></pre></td></tr></table></figure>
+
+<p>这个 solver 的返回值即为猫要往哪个方向走一步，如果撞墙则算玩家获胜</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-1</td>
+<td align="left">猫主动弃权</td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">左</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">左上</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">右上</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">右</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">右下</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">左下</td>
+</tr>
+</tbody></table>
+<p>猫站在星号的位置，数字代表每个方向的编号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> 1 2</span><br><span class="line">0 * 3</span><br><span class="line"> 5 4</span><br></pre></td></tr></table></figure>
+
+<p>例如</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="property">game</span>.<span class="property">solver</span> = <span class="keyword">function</span> (<span class="params">blocksIsWall, i, j</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>即：一直向左走，直到撞墙。</p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>游戏的思路和小猫的图片来源于 <a target="_blank" rel="noopener" href="https://www.gamedesign.jp/flash/chatnoir/chatnoir.html">www.gamedesign.jp</a>，原来的游戏名叫 Chat Noir，我只是尝试用 javascript 重写一遍。</li>
+</ul>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>MIT License</p>
+
       </div>
       
       
@@ -272,7 +395,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#catch-cat"><span class="nav-number">1.</span> <span class="nav-text">catch-cat</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8D%89%E4%BD%8F%E5%B0%8F%E7%8C%AB"><span class="nav-number">1.</span> <span class="nav-text">捉住小猫</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F%E7%8E%A9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">游戏玩法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2"><span class="nav-number">1.2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E7%BC%96%E5%86%99%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">自己编写算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">1.4.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#License"><span class="nav-number">1.5.</span> <span class="nav-text">License</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
