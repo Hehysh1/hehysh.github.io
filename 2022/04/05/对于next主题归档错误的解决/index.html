@@ -17,13 +17,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"hehysh.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="我们都知道next主题有个东西叫做categories，就是主页上显示的那个「分类」但是在当前版本的next（也许最新的没有），有一个致命的bug，会导致他显示错误同时，这个bug也适用于除了home主页的其他所有在侧边栏显示的页面">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对于next主题归档错误的解决">
-<meta property="og:url" content="http://example.com/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/index.html">
+<meta property="og:url" content="http://hehysh.github.io/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/index.html">
 <meta property="og:site_name" content="十贰的小窝">
 <meta property="og:description" content="我们都知道next主题有个东西叫做categories，就是主页上显示的那个「分类」但是在当前版本的next（也许最新的没有），有一个致命的bug，会导致他显示错误同时，这个bug也适用于除了home主页的其他所有在侧边栏显示的页面">
 <meta property="og:locale" content="zh_CN">
@@ -33,7 +33,7 @@
 <meta property="article:tag" content="hexo博客搭建">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/">
+<link rel="canonical" href="http://hehysh.github.io/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/">
 
 
 <script id="page-configurations">
@@ -192,7 +192,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/">
+    <link itemprop="mainEntityOfPage" href="http://hehysh.github.io/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/writer.jpeg">
@@ -265,7 +265,7 @@
 <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: <span class="regexp">/about/</span> || user</span><br><span class="line">  #tags: <span class="regexp">/tags/</span> || tags</span><br><span class="line">  #categories: <span class="regexp">/categories/</span> || th</span><br><span class="line">  archives: <span class="regexp">/archives/</span> || archive</span><br><span class="line">  #schedule: <span class="regexp">/schedule/</span> || calendar </span><br></pre></td></tr></table></figure>
 <p>我们要使一个页面在侧边栏生效，就需要取消掉一个选项前面的<code>#</code>号。<br>比如说我们要改categories项，让他显示在侧边栏，就把它改成这样：</p>
 <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  #about: <span class="regexp">/about/</span>|| user</span><br><span class="line">  #tags: <span class="regexp">/tags/</span>|| tags</span><br><span class="line">  categories: <span class="regexp">/categories/</span>|| th</span><br><span class="line">  archives: <span class="regexp">/archives/</span>|| archive</span><br><span class="line">  #schedule: <span class="regexp">/schedule/</span> || calendar</span><br></pre></td></tr></table></figure>
-<p>以此类推<br>但问题就出在这里，我们把其中的一个选项放大来看<br><code>categories: /categories/ || th</code><br>我们可以发现在&#x2F;和||中间还隔着一个空格<br>还记得我们<a target="_blank" rel="noopener" href="https://hehysh.github.io/2022/04/05/%E6%B5%8B%E8%AF%95/#more">上次说的</a>吗？<br>在hexo中：冒号后面要加空格，在这里也出现了同样的问题<br>在老版本中，&#x2F;和||中间隔着一个空格是完全没关系的，但到了新版本，他就会像冒号后面不加空格一样显示错误，虽然规则改了，但文件还没改，这就导致出现了致命的bug<br>具体错误会像这样，当你点击侧边栏界面是，页面会显示<br><code>Cannot GET /%20</code><br>其中%20是空格的意思，这就让我们确认了是空格导致的问题<br>我们把错误的内容改成这样⬇️</p>
+<p>以此类推<br>但问题就出在这里，我们把其中的一个选项放大来看<br><code>categories: /categories/ || th</code><br>我们可以发现在&#x2F;和||中间还隔着一个空格<br>还记得我们<a href="https://hehysh.github.io/2022/04/05/%E6%B5%8B%E8%AF%95/#more">上次说的</a>吗？<br>在hexo中：冒号后面要加空格，在这里也出现了同样的问题<br>在老版本中，&#x2F;和||中间隔着一个空格是完全没关系的，但到了新版本，他就会像冒号后面不加空格一样显示错误，虽然规则改了，但文件还没改，这就导致出现了致命的bug<br>具体错误会像这样，当你点击侧边栏界面是，页面会显示<br><code>Cannot GET /%20</code><br>其中%20是空格的意思，这就让我们确认了是空格导致的问题<br>我们把错误的内容改成这样⬇️</p>
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">menu:</span></span><br><span class="line"><span class="symbol">  home:</span> /||home</span><br><span class="line"><span class="symbol">  about:</span> <span class="keyword">/about/</span>||user</span><br><span class="line"><span class="symbol">  tags:</span> <span class="keyword">/tags/</span>||tags</span><br><span class="line"><span class="symbol">  categories:</span> <span class="keyword">/categories/</span>||th</span><br><span class="line"><span class="symbol">  archives:</span> <span class="keyword">/archives/</span>||archive</span><br><span class="line">  <span class="meta">#schedule: /schedule/||calendar</span></span><br></pre></td></tr></table></figure>
 <p>然后保存，再重新部署<br>over！搞定辣！</p>
 
@@ -283,7 +283,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/" title="对于next主题归档错误的解决">http://example.com/2022/04/05/对于next主题归档错误的解决/</a>
+    <a href="http://hehysh.github.io/2022/04/05/%E5%AF%B9%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E5%BD%92%E6%A1%A3%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3/" title="对于next主题归档错误的解决">http://hehysh.github.io/2022/04/05/对于next主题归档错误的解决/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
