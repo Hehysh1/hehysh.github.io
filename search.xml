@@ -82,7 +82,7 @@
   <entry>
     <title>对于hexo博客的空格之重要性</title>
     <url>/%E6%B5%8B%E8%AF%95.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><br>耗时一天，我某河终于搭建出了基于hexo的博客<br><br>哈哈哈哈实在是太开心辣哈哈哈哈<br><br>但是部署第一篇正经的文章却出现了一些问题</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><br>耗时一天，我十贰终于搭建出了基于hexo的博客<br><br>哈哈哈哈实在是太开心辣哈哈哈哈<br><br>但是部署第一篇正经的文章却出现了一些问题</p>
 <span id="more"></span>
 <p><br>我们都知道在用hexo new生成文章的时候，会生成一个.md文件，里面有以下内容：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">???</span></span><br><span class="line"><span class="attr">tag:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
