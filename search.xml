@@ -145,4 +145,12 @@
         <tag>hexo博客搭建</tag>
       </tags>
   </entry>
+  <entry>
+    <title>cloudflare worker的运用</title>
+    <url>/worker%E7%9A%84%E8%BF%90%E7%94%A8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <tags>
+        <tag>cloudflare</tag>
+      </tags>
+  </entry>
 </search>

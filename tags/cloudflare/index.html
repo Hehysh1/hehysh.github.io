@@ -20,20 +20,18 @@
     var CONFIG = {"hostname":"hehysh.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="&#x2F;&#x2F;import * as three from ‘three’ &#x2F;&#x2F;正确&#x2F;&#x2F;import three from ‘three’ &#x2F;&#x2F;错误var THREE &#x3D; require(‘three’) &#x2F;&#x2F;正确&#x2F;&#x2F; console.log(three) var camera,">
+  <meta name="description" content="𝖘𝖊𝖎𝖓 𝖟𝖚𝖒 𝖙𝖔𝖉𝖊">
 <meta property="og:type" content="website">
 <meta property="og:title" content="十贰的小窝">
-<meta property="og:url" content="http://hehysh.github.io/Earth/note/1.html">
+<meta property="og:url" content="http://hehysh.github.io/tags/cloudflare/index.html">
 <meta property="og:site_name" content="十贰的小窝">
-<meta property="og:description" content="&#x2F;&#x2F;import * as three from ‘three’ &#x2F;&#x2F;正确&#x2F;&#x2F;import three from ‘three’ &#x2F;&#x2F;错误var THREE &#x3D; require(‘three’) &#x2F;&#x2F;正确&#x2F;&#x2F; console.log(three) var camera,">
+<meta property="og:description" content="𝖘𝖊𝖎𝖓 𝖟𝖚𝖒 𝖙𝖔𝖉𝖊">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-17T10:58:48.440Z">
-<meta property="article:modified_time" content="2022-04-17T10:58:48.440Z">
 <meta property="article:author" content="十贰">
 <meta property="article:tag" content="十贰">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://hehysh.github.io/Earth/note/1.html">
+<link rel="canonical" href="http://hehysh.github.io/tags/cloudflare/">
 
 
 <script id="page-configurations">
@@ -46,8 +44,7 @@
   };
 </script>
 
-  <title> | 十贰的小窝
-</title>
+  <title>标签: cloudflare | 十贰的小窝</title>
   
 
 
@@ -185,91 +182,54 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content tag">
             
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">
-</h1>
-
-<div class="post-meta">
   
-  <ul class="breadcrumb">
-          
-            <li><a href="/Earth/">EARTH</a></li>
-            <li><a href="/Earth/note/">NOTE</a></li>
-            <li>1</li>
-          
-  </ul>
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <p>&#x2F;&#x2F;import * as three from ‘three’ &#x2F;&#x2F;正确<br>&#x2F;&#x2F;import three from ‘three’ &#x2F;&#x2F;错误<br>var THREE &#x3D; require(‘three’) &#x2F;&#x2F;正确<br>&#x2F;&#x2F; console.log(three)</p>
-<p>var camera, scene, renderer;<br>var geometry, materail, mesh;</p>
-<p>&#x2F;&#x2F; 初始化渲染场景<br>function initRenderer() {</p>
-<pre><code>renderer = new THREE.WebGLRenderer(&#123;
-    antialias: true
-&#125;)
-
-renderer.setSize(window.innerWidth, window.innerHeight)
-document.body.appendChild(renderer.domElement)
-</code></pre>
-<p>}</p>
-<p>&#x2F;&#x2F; 初始化相机	<br>function initCamera() {<br>    &#x2F;&#x2F;透视投影相机<br>    &#x2F;&#x2F; fov 可视角度<br>    &#x2F;&#x2F; aspect 为width&#x2F;height ,通常设置为canvas元素的宽高比<br>    &#x2F;&#x2F; near 近端距离<br>    &#x2F;&#x2F; far 远端距离</p>
-<pre><code>camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 100)
-camera.position.z = 1
-</code></pre>
-<p>}</p>
-<p>&#x2F;&#x2F; 初始化场景<br>function initScene() {<br>    scene &#x3D; new THREE.Scene()<br>}</p>
-<p>&#x2F;&#x2F;初始化物体<br>function initObj() {<br>    &#x2F;&#x2F; 盒子<br>    geometry &#x3D; new THREE.BoxGeometry(0.2, 0.2, 0.2)<br>    &#x2F;&#x2F; 材质<br>    materail &#x3D; new THREE.MeshNormalMaterial()<br>    &#x2F;&#x2F;<br>    mesh &#x3D; new THREE.Mesh(geometry, materail)</p>
-<pre><code>console.log(&#39;-------------&#39;)
-console.log(THREE.BoxGeometry)
-console.log(THREE.MeshDepthMaterial)
-console.log(THREE.Mesh)
-console.log(mesh)
-
-scene.add(mesh)
-</code></pre>
-<p>}</p>
-<p>&#x2F;&#x2F; 渲染<br>function render() {<br>    animate()<br>}</p>
-<p>&#x2F;&#x2F; 动画<br>function animate() {<br>    requestAnimationFrame(animate);<br>    mesh.rotation.x +&#x3D; 0.01<br>    mesh.rotation.y +&#x3D; 0.02<br>    renderer.render(scene, camera)<br>}</p>
-<p>function init() {<br>    initRenderer()<br>    initCamera()<br>    initScene()<br>    initObj()<br>    render()<br>}</p>
-<p>init()</p>
-<p>&#x2F;&#x2F;安装轨道控制插件:npm install three-orbit-controls<br>&#x2F;&#x2F;插件引入之前必须确认three.js库已经引入<br>&#x2F;&#x2F;OrbitControls &#x3D; require(‘three-orbit-controls’)(THREE)<br>&#x2F;&#x2F;使用：controls &#x3D; new OrbitControls(camera);</p>
-<p>&#x2F;&#x2F;安装加载.obj和.mtl文件的插件 npm i –save three-obj-mtl-loader<br>&#x2F;&#x2F;插件引入之前必须确认three.js库已经引入<br>&#x2F;&#x2F;该插件包括加载.obj和.mtl 文件的加载器<br>&#x2F;&#x2F;import {MTLLoader,OBJLoader} from ‘three-obj-mtl-loader’;<br>&#x2F;&#x2F;使用： mtlLoader &#x3D; new MTLLoader(); objLoader &#x3D; new OBJLoader();</p>
-<p>&#x2F;&#x2F;安装 three-css2drender 插件， npm i –save three-css2drender<br>&#x2F;&#x2F;插件引入之前必须确认three.js库已经引入<br>&#x2F;&#x2F;import {CSS2DRenderer,CSS2DObject} from ‘three-css2drenderer’;<br>&#x2F;&#x2F;使用：labelRenderer &#x3D; new CSS2DRenderer(); label &#x3D; new CSS2DObject( text );</p>
-
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">cloudflare
+          <small>标签</small>
+        </h2>
       </div>
-      
-      
-      
-    </div>
-    
-  <ul class="breadcrumb">
-          
-            <li><a href="/Earth/">EARTH</a></li>
-            <li><a href="/Earth/note/">NOTE</a></li>
-            <li>1</li>
-          
-  </ul>
 
-    
-    
-    
+      
+    <div class="collection-year">
+      <span class="collection-header">2022</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2022-04-17T19:02:54+08:00"
+              content="2022-04-17">
+          04-17
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/worker%E7%9A%84%E8%BF%90%E7%94%A8.html" itemprop="url">
+            <span itemprop="name">cloudflare worker的运用</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+    </div>
+  </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -335,7 +295,7 @@ scene.add(mesh)
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -348,7 +308,7 @@ scene.add(mesh)
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
